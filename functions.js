@@ -10,8 +10,8 @@ var allNavSelector = '.nav';
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
-		autoScrolling:true,
-		scrollHorizontally: true,
+		autoScrolling: true,
+		recordHistory: false,
 		sectionsColor: ['#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7'],
 		anchors: ['intro', 'about', 'andabout', 'work', 'contact'],
 		afterLoad: function(origin, destination) {
@@ -29,6 +29,9 @@ $(document).ready(function() {
 					navElement.classList.add('active');
 				}
 			}
+
+			// show nav only when not on the first slide
+
 		}
 	});
 

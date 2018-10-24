@@ -5,22 +5,26 @@
     width: 100%;
     background: #F7F7F7;
     z-index:9;
-    justify-content: space-between;
-  }
+    text-align: center;
+/*    justify-content: space-between;
+*/  }
 
 .nav {
+    flex: 1;
     padding: 34px 55px 55px 55px;
     font-size: 34px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #4A4A4A;
+    color: #CBCBCB;
 } 
 
 .section {
   text-align:center;
+/*  padding-left: 15vw;
+*/  
   font-size: 55px;
   font-family: 'Source Sans Pro', sans-serif;
   background-size: cover;
-  color: #4A4A4A;
+  color: #101010;
 }
 
 .slide{
@@ -30,26 +34,60 @@
 .content{
   margin:50px
 }
+
 .images{
   max-width: 70%;
   height: auto;
   top: 50%;
 }
 
-.projectLink {
+.fullscreen{
+  width: 90%;
+  height: auto;
+}
+
+.worktext {
+  text-align:left;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-size: 34px;
+  padding-top: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4A4A4A;
+}
+
+.worktextlink {
+  text-align:left;
+  padding-left: 15vw;
+  padding-bottom: 34px;
+  font-size: 21px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4A4A4A;
+}
+
+#blue.worktext {
+  color: #262C7E;
+}
+
+/*.projectLink {
   list-style: none; 
   font-size: 1em; 
 } 
 
 .projectLink { 
   display: inline-block; 
-} 
+} */
 
 a {
   position: relative; 
   text-decoration: none; 
-  color: #4A4A4A; 
+  color: #e1e1e1; 
 } 
+
+.active a{
+  color: #101010;
+/*  color: #4A4A4A;
+*/}
 
 
 a:after { 
@@ -58,19 +96,20 @@ a:after {
   position: absolute; 
   left: 0px; 
   bottom: -2px; 
-  background-color: #000; 
+  background-color: #101010; 
   width: 0; 
-  height: 2px; 
+  height: 3px; 
   transition: all 0.2s; 
   } 
 
 a:hover { 
-  color: #4A4A4A; 
-} 
+  color: #101010;
+/*  color: #4A4A4A; 
+*/} 
 
 a:hover:after,
 .active a:after { 
-  width: 100%; 
+  width: 100%;
 }
 
 
@@ -100,12 +139,18 @@ a:hover:after,
 
 @media (max-width: 850px){
   .section {
-    font-size: 24px;
+    font-size: 5vw;
   }
   .nav {
     padding: 14px 24px 24px 24px;
-    font-size: 14px;
+    font-size: 18px;
+  }
+  a:after { 
+  height: 1px; 
   } 
+  .images{
+  max-width: 100%;
+}
 }
 
 
