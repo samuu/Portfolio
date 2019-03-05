@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
 		autoScrolling:true,
-		sectionsColor: ['#FDD2D5', '#FDD2D5', '#FDD2D5', '#FDD2D5', '#FDD2D5', '#FDD2D5']
+		sectionsColor: ['#F7F7F7', '#F7F7F7', '#F7F7F7', '#F7F7F7', '#F7F7F7', '#F7F7F7']
 		// anchors:['intro', 'about', 'andabout', 'work', 'contact']
 	});
 
