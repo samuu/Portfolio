@@ -68,8 +68,8 @@
 			//  Either set true/false, or an object with the HTML
 			//  elements for each arrow like below:
 			arrows: {
-				prev: '<a class="' + self._ + '-arrow prev">â†</a>',
-				next: '<a class="' + self._ + '-arrow next">â†’</a>'
+				prev: '<a class="' + self._ + '-arrow prev"></a>',
+				next: '<a class="' + self._ + '-arrow next"></a>'
 			},
 
 			//  How should Unslider animate?

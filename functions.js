@@ -6,6 +6,7 @@ var mapSectionToNavSelector = {
 	work_one: '#works',
 	work_two: '#works',
 	work_three: '#works',
+	work_four: '#works',
 	contact: '#hi',
 };
 var allNavSelector = '.nav';
@@ -13,10 +14,11 @@ var allNavSelector = '.nav';
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
+		licenseKey: '17428C99-F60848AF-92ACD7F9-90ECDA8E',
 		autoScrolling: true,
 		recordHistory: false,
-		sectionsColor: ['#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7'],
-		anchors: ['intro', 'about', 'andabout', 'work', 'work_one', 'work_two', 'work_three', 'contact'],
+		sectionsColor: ['#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7', '#f7f7f7'],
+		anchors: ['intro', 'about', 'andabout', 'work', 'work_one', 'work_two', 'work_three', 'work_four', 'contact'],
 		afterLoad: function(origin, destination) {
 			// remove active class from all nav elements
 			var allNavElements = document.querySelectorAll(allNavSelector);

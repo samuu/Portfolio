@@ -38,10 +38,7 @@ body{
   z-index: 9;
 }
 
-#imggrid {
- /*   width: 925px;
-    padding-top: 20px;*/
-}
+
 
 .nav {
     /*flex: 1;
@@ -52,7 +49,6 @@ body{
     color: #CBCBCB;
     padding: 0.2vw 1vw 0 0;
 } 
-
 
 
 .section {
@@ -112,6 +108,73 @@ body{
 
 }
 
+/*    .banner {
+      height: 500px;
+    }
+  
+    .banner img {
+      width: 100%;
+    }*/
+
+.imggrid {
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr)
+}
+
+
+
+    .banner { 
+/*      grid-row: 4/5;
+*/
+      /*position: relative; 
+      overflow: auto;*/
+    }
+
+    .banner img{
+      width: 100%; 
+    }
+
+    .banner li { 
+      list-style: none; 
+    }
+
+    .banner ul li { 
+    }
+
+.imgpos {
+    grid-row: 2/5;
+    grid-column: 1/4;
+    align-self: flex-start;
+    justify-self: flex-start; 
+    overflow: visible;
+/*    border: 2px #000 solid;
+*/}
+    /* Change the arrow styles
+      You could also use an image instead
+    */
+    .unslider-arrow { 
+      visibility: hidden; /* Hide the default arrows */
+    }
+    
+    /* Use dynamic content to add in a different character and show it */
+    .unslider-arrow:before {
+      visibility: visible;
+    }
+
+    .unslider-arrow.prev:before {
+      content: 'last';
+    }
+    .unslider-arrow.next:before {
+      content: 'next';
+    }
+
+    .unslider-arrow.next #text{
+      visibility: hidden;
+    }
+     
+
 @keyframes highl {
   from {
     background-position: 0;
@@ -167,13 +230,88 @@ body{
   color: #101010;
 }
 
+
+.grid{
+  height: 100%;
+  display: grid;
+/*  grid-template-rows: repeat(3, 1fr)*/;
+  grid-template-rows: 1fr 1fr 20%;
+  grid-row-gap: 1em;
+}
+
+.nested{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
+}
+
 .projectHeadline {
-  text-align:left;
+  grid-row: 1 / 2;
+  align-self: flex-end;
   font-size: 34px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: italic;
   background-size: cover;
   color: black;
+/*  border: 1px #000 solid;
+*/}
+
+.projectCopy {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  align-self: flex-start;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  color: black;
+/*  border: 1px #000 solid;
+*/}
+
+.projectQuote {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  align-self: flex-start;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: italic;
+  background-size: cover;
+  color: #FFA682;
+/*  border: 1px #000 solid;
+*/}
+
+.scrollNote {
+  grid-row: 3 / 4;
+  justify-self: center; 
+  align-self: flex-end;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  background-size: cover;
+  color: black;
+/*  border: 1px #000 solid;
+*/}
+
+.scrollNoteLight {
+  grid-row: 3 / 4;
+  justify-self: center; 
+  align-self: flex-end;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  background-size: cover;
+  color: #FFA682;
+}
+
+.lead {
+  padding: 0;
+  margin: 0;
+}
+
+#vimeo{
+  grid-row: 2 / 3;
+  align-self: flex-end;
 }
 
 .credits {
@@ -244,6 +382,11 @@ a:hover:after,
   width: 100%;
 }
 
+#inactive {
+  color: #e1e1e1;
+}
+
+
 #bg_one{
   background-image: url(samuel_night.jpg);
   height: auto;
@@ -257,12 +400,69 @@ a:hover:after,
   background-position: center; 
 }
 
-#bg_allgood{
-  background-image: url(allgood.gif);
-  background-repeat: no-repeat;
-  background-size: 70vw;
-  background-position: center; 
+#bg_allgoodHead{
+  background-image: url(allgood_header.png);
+  height: auto;
+  width: 100%;
 }
+
+#bg_allgood01{
+  background-image: url(highlight01.gif);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: center;
+}
+
+#bg_allgood02{
+  background-image: url(highlight02.gif);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: center;
+}
+
+#bg_allgood03{
+  background-image: url(highlight03.gif);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: center;
+}
+
+#bg_allgood04{
+  background-image: url(highlight04.gif);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: center;
+}
+
+#bg_cageHead{
+  background-image: url(alexacagehead.jpg);
+  height: auto;
+  width: 100%;
+}
+
+#bg_cageFunc{
+  background-image: url(cage_replace.jpg);
+  height: auto;
+  width: 100%;
+}
+
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:3;
+  }
+
 
 @media (max-width: 1200px){
   .section {
@@ -294,7 +494,7 @@ a:hover:after,
   #footer{
   height: 44px;
 
-}
+  }
 
   #bg_two{
     background-size: 80vw;
@@ -305,7 +505,40 @@ a:hover:after,
   } 
   .images{
   max-width: 100%;
-}
+  }
+
+  .grid{
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .projectHeadline {
+  grid-row: 1 / 2;
+  align-self: flex-end;
+  font-size: 18px;
+/*  border: 1px #000 solid;
+*/}
+
+.projectCopy {
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  align-self: flex-start;
+  font-size: 10px;
+/*  border: 1px #000 solid;
+*/}
+
+.projectQuote {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  align-self: flex-start;
+  font-size: 12px;
+/*  border: 1px #000 solid;
+*/}
+
+.scrollNote {
+  grid-row: 4 / 5;
+  font-size: 6px;
+/*  border: 1px #000 solid;
+*/}
 }
 
 
