@@ -382,6 +382,10 @@ a:hover:after,
   width: 100%;
 }
 
+.legal{
+  color: #FFA682;
+}
+
 #inactive {
   color: #e1e1e1;
 }
