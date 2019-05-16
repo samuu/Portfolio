@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     position: relative;
-    width: 925px;
+    width: 100%;
 }
 
 .unslider-wrap{
@@ -70,4 +70,11 @@
 
 .unslider-nav{
     display: none;
+}
+
+@media (max-width: 850px){
+
+    .unslider-arrow { 
+        font-size: 12px
+    }
 }

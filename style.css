@@ -61,6 +61,7 @@ body{
   background-size: cover;
 /*  color: #829dff;*/
   color: black;
+  height: calc(100vh - 2em)
 }
 
 #imp{
@@ -395,6 +396,7 @@ a:hover:after,
   background-image: url(samuel_night.jpg);
   height: auto;
   width: 100%;
+  background-position: center;
 }
 
 #bg_two{
@@ -408,6 +410,8 @@ a:hover:after,
   background-image: url(allgood_header.png);
   height: auto;
   width: 100%;
+  background-position: right;
+
 }
 
 #bg_allgood01{
@@ -442,6 +446,8 @@ a:hover:after,
   background-image: url(alexacagehead.jpg);
   height: auto;
   width: 100%;
+  background-position: center;
+
 }
 
 #bg_cageFunc{
@@ -468,19 +474,14 @@ a:hover:after,
   }
 
 
-@media (max-width: 1200px){
-  .section {
-    font-size: 34px;
-  }
-  .nav {
-    padding: 24px 34px 34px 34px;
-    font-size: 24px;
-  } 
-}
 
 @media (max-width: 850px){
+
+
   .section {
     font-size: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
   }
   .nav {
     font-size: 12px;
@@ -494,14 +495,42 @@ a:hover:after,
   .worktextlink{
     font-size: 18px;
   }
+
+  #header{
+    padding-left: 7vw;
+  }
   
   #footer{
   height: 44px;
-
+  padding-left: 7vw;
   }
 
   #bg_two{
     background-size: 80vw;
+  }
+
+  #bg_allgood01{
+  background-size: 110vw;
+  background-position: right;
+  }
+
+  #bg_allgood02{
+    background-size: 110vw;
+    background-position: left;
+  }
+
+  #bg_allgood03{
+    background-size: 110vw;
+    background-position: right;
+  }
+
+  #bg_allgood04{
+    background-size: 110vw;
+    background-position: left;
+  }
+
+  #vimeo {
+    width: 100%;
   }
 
   a:after { 
@@ -526,7 +555,7 @@ a:hover:after,
   grid-row: 2 / 3;
   grid-column: 1 / 4;
   align-self: flex-start;
-  font-size: 10px;
+  font-size: 12px;
 /*  border: 1px #000 solid;
 */}
 
@@ -534,16 +563,21 @@ a:hover:after,
   grid-row: 3 / 4;
   grid-column: 1 / 4;
   align-self: flex-start;
-  font-size: 12px;
+  font-size: 14px;
 /*  border: 1px #000 solid;
 */}
 
 .scrollNote {
   grid-row: 4 / 5;
-  font-size: 6px;
+  font-size: 10px;
 /*  border: 1px #000 solid;
 */}
+
+.credits {
+  font-size: 14px;
 }
+}
+
 
 
 
