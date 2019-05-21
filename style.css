@@ -1,14 +1,3 @@
-
-/*#header{
-    position:fixed;
-    height: 100px;
-    display:flex;
-    width: 100%;
-    background: #F7F7F7;
-    z-index:9;
-    text-align: center;
-}*/
-
 body{
   background-color: #f7f7f7;
 }
@@ -34,14 +23,11 @@ body{
   height: 2em;
   background: #101010;
   bottom: 0;
-/*  background: #CBCBCB;*/
   z-index: 9;
 }
 
 
 .nav {
-    /*flex: 1;
-    padding: 34px 55px 55px 55px;*/
     font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
     color: #CBCBCB;
@@ -58,7 +44,6 @@ body{
   font-family: 'IBM Plex Mono', monospace;
   font-style: italic;
   background-size: cover;
-/*  color: #829dff;*/
   color: black;
   height: calc(100vh - 2em)
 }
@@ -80,29 +65,14 @@ body{
 
 
 .section.active .fp-tableCell .highlight1 {
-  /*background-color: #FFA682; 
-  height: 100%;
-  width: 100%;
-  bottom: -2px;
-  left: -2px;
-  transition: width 10s;*/
-
   background-image: linear-gradient(to right, transparent 50%, #e4dfdd 50%);
   animation: highl 0.5s ease-out;
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
   background-size: 200%;
-
 }
 
 .section.active .fp-tableCell .highlight2{
-  /*background-color: #FFA682; 
-  height: 100%;
-  width: 100%;
-  bottom: -2px;
-  left: -2px;
-  transition: width 10s;*/
-
   background-image: linear-gradient(to right, transparent 50%, #e4dfdd 50%);
   animation: highl 0.7s ease-out;
   animation-delay: 1.4s;
@@ -111,13 +81,6 @@ body{
 
 }
 
-/*    .banner {
-      height: 500px;
-    }
-  
-    .banner img {
-      width: 100%;
-    }*/
 
 .imggrid {
     height: auto;
@@ -128,32 +91,24 @@ body{
 
 
 
-    .banner { 
-/*      grid-row: 4/5;
-*/
-      /*position: relative; 
-      overflow: auto;*/
-    }
+.banner { 
+}
 
-    .banner img{
-      width: 100%; 
-    }
+.banner img{
+  width: 100%; 
+}
 
-    .banner li { 
-      list-style: none; 
-    }
+.banner li { 
+  list-style: none; 
+}
 
-    .banner ul li { 
-    }
+.banner ul li { 
+}
 
 .imgpos {
-    grid-row: 2/5;
-    grid-column: 1/4;
-    align-self: flex-start;
-    justify-self: flex-start; 
-    overflow: visible;
-/*    border: 2px #000 solid;
-*/}
+  width: 70vw;
+  position: relative;
+}
     /* Change the arrow styles
       You could also use an image instead
     */
@@ -184,7 +139,6 @@ body{
 
   }
   to {
-   /* background-size: 100%;*/
     background-position: -100%;
   }
 }
@@ -202,12 +156,6 @@ body{
   height: auto;
   top: 50%;
 }
-
-/*.teaser{
-  height: 20vw;
-  width: auto;
-  position: absolute;
-}*/
 
 .fullscreen{
   width: 90%;
@@ -236,16 +184,6 @@ body{
 
 .grid{
   height: 100%;
-  display: grid;
-/*  grid-template-rows: repeat(3, 1fr)*/;
-  grid-template-rows: 1fr 1fr 20%;
-  grid-row-gap: 1em;
-}
-
-.nested{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2em;
 }
 
 .projectHeadline {
@@ -256,55 +194,39 @@ body{
   font-style: italic;
   background-size: cover;
   color: black;
-/*  border: 1px #000 solid;
-*/}
+}
 
 .projectCopy {
-/*  grid-row: 2 / 3;
-  grid-column: 1 / 2;*/
-/*  align-self: flex-start;
-*/  font-size: 18px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   color: black;
   width: 60%;
   padding-right: 2%;
-/*  border: 1px #000 solid;
-*/}
+}
 
 .projectQuote {
- /* grid-row: 2 / 3;
-  grid-column: 2 / 3;*/
-/*  align-self: flex-start;
-*/  font-size: 24px;
+  font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: italic;
   background-size: cover;
   color: #FFA682;
   width: 36%;
   padding-left: 2%;
-
-/*  border: 1px #000 solid;
-*/}
+}
 
 .scrollNote {
   position: absolute;
   bottom: 15px;
   width: calc(100% - 30vw);
   text-align: center;
-  /*grid-row: 3 / 4;
-  justify-self: center; 
-  align-self: flex-end;
-  padding-bottom: 25px;*/
   font-size: 14px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
-/*  background-size: cover;
-*/  color: black;
-/*  border: 1px #000 solid;
-*/}
+  color: black;
+}
 
-.scrollNoteLight {
+/*.scrollNoteLight {
   grid-row: 3 / 4;
   justify-self: center; 
   align-self: flex-end;
@@ -314,7 +236,7 @@ body{
   font-style: normal;
   background-size: cover;
   color: #FFA682;
-}
+}*/
 
 .shell{
   display: flex;
@@ -339,14 +261,13 @@ body{
   margin-right: auto;
 }
 
-.lead {
+/*.lead {
   padding: 0;
   margin: 0;
 }
-
+*/
 #vimeo{
-  grid-row: 2 / 3;
-  align-self: flex-end;
+  padding-top: 10px;
 }
 
 .credits {
@@ -371,15 +292,6 @@ body{
   color: #262C7E;
 }
 
-/*.projectLink {
-  list-style: none; 
-  font-size: 1em; 
-} 
-
-.projectLink { 
-  display: inline-block; 
-} */
-
 a {
   position: relative; 
   text-decoration: none; 
@@ -391,8 +303,7 @@ a {
 
 .active a{
   color: #FFA682;
-/*  color: #4A4A4A;
-*/}
+}
 
 .worktextlink a{
   color: #000
@@ -414,8 +325,7 @@ a {
 
 a:hover { 
   color: #FFA682;
-/*  color: #4A4A4A; 
-*/} 
+} 
 
 .worktextlink a:hover:after,
 .active a:after { 
@@ -578,16 +488,14 @@ a:hover {
   }
 
   #bg_dangerHead{
-/*  background-image: url(dangerzonehead.png);
-  height: auto;
-  width: 100%;
-  background-position: center;*/
   background-size: 130vw;
   background-repeat: no-repeat;
 }
 
   #vimeo {
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: -7vw;
   }
 
   a:after { 
@@ -598,15 +506,14 @@ a:hover {
   }
 
   .grid{
-    grid-template-rows: repeat(4, 1fr);
-  }
+/*    grid-template-rows: repeat(4, 1fr);
+*/  }
 
   .projectHeadline {
   grid-row: 1 / 2;
   align-self: flex-end;
   font-size: 18px;
-/*  border: 1px #000 solid;
-*/}
+}
 
 .shell{
   flex-wrap: wrap;
@@ -626,32 +533,29 @@ a:hover {
 }
 
 .projectCopy {
-/*  grid-row: 2 / 3;
-  grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 12px;
   width: 100%;
   padding-right: 0%;
-
-/*  border: 1px #000 solid;
-*/}
+}
 
 .projectQuote {
-/*  grid-row: 3 / 4;
-  grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 14px;
   width: 100%;
   padding-left: 0%;
-/*  border: 1px #000 solid;
-*/}
+}
 
 .scrollNote {
   font-size: 10px;
   width: calc(100% - 14vw);
+}
 
-/*  border: 1px #000 solid;
-*/}
+.imgpos {
+  width: 100vw;
+  position: relative;
+  left: -7vw;
+}
 
 .credits {
   font-size: 14px;
@@ -662,49 +566,3 @@ a:hover {
     padding-right: 15vw;
   }
 }
-
-
-
-
-/* PHONES */
-/* Portrait */
-/*@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .nav {
-    font-size: 5.9vw;
-    color: red;
-    } 
-    .section{
-    font-size: 10px;
-    }
- }*/
-/* Landscape */
-/*@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .nav {
-    font-size: 5.9vw;
-    color: red;
-    } 
-    .section{
-    font-size: 10px;
-    }
-}
-
-@media only screen 
-  and (min-width: 1700px) 
-  and (max-width: 5000px)
-  and (orientation: landscape) {
-    .nav {
-    font-size: 5.9vw;
-    color: red;
-    } 
-    .section{
-    font-size: 10px;
-    }
-}*/
