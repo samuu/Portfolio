@@ -69,6 +69,7 @@ body{
     justify-content: flex-end;
     padding-right: 15vw;
     text-align: right;
+    flex-grow: 1;
 }
 #imp a{
     color: #6c6c6c;
@@ -268,6 +269,8 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   color: black;
+  width: 60%;
+  padding-right: 2%;
 /*  border: 1px #000 solid;
 */}
 
@@ -280,14 +283,17 @@ body{
   font-style: italic;
   background-size: cover;
   color: #FFA682;
+  width: 36%;
+  padding-left: 2%;
+
 /*  border: 1px #000 solid;
 */}
 
 .scrollNote {
   position: absolute;
-bottom: 10px;
-width: calc(100% - 30vw);
-text-align: center;
+  bottom: 15px;
+  width: calc(100% - 30vw);
+  text-align: center;
   /*grid-row: 3 / 4;
   justify-self: center; 
   align-self: flex-end;
@@ -628,6 +634,9 @@ a:hover {
   grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 12px;
+  width: 100%;
+  padding-right: 0%;
+
 /*  border: 1px #000 solid;
 */}
 
@@ -636,12 +645,14 @@ a:hover {
   grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 14px;
+  width: 100%;
+  padding-left: 0%;
 /*  border: 1px #000 solid;
 */}
 
 .scrollNote {
-  grid-row: 4 / 5;
   font-size: 10px;
+  width: calc(100% - 14vw);
 
 /*  border: 1px #000 solid;
 */}
@@ -649,6 +660,11 @@ a:hover {
 .credits {
   font-size: 14px;
 }
+}
+@media (min-width: 850px){
+  #footer #imp a{
+    padding-right: 15vw;
+  }
 }
 
 
