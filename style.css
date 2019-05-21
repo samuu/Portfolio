@@ -39,7 +39,6 @@ body{
 }
 
 
-
 .nav {
     /*flex: 1;
     padding: 34px 55px 55px 55px;*/
@@ -258,10 +257,10 @@ body{
 */}
 
 .projectCopy {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  align-self: flex-start;
-  font-size: 18px;
+/*  grid-row: 2 / 3;
+  grid-column: 1 / 2;*/
+/*  align-self: flex-start;
+*/  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   color: black;
@@ -269,10 +268,10 @@ body{
 */}
 
 .projectQuote {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  align-self: flex-start;
-  font-size: 24px;
+ /* grid-row: 2 / 3;
+  grid-column: 2 / 3;*/
+/*  align-self: flex-start;
+*/  font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: italic;
   background-size: cover;
@@ -281,15 +280,19 @@ body{
 */}
 
 .scrollNote {
-  grid-row: 3 / 4;
+  position: absolute;
+bottom: 10px;
+width: calc(100% - 30vw);
+text-align: center;
+  /*grid-row: 3 / 4;
   justify-self: center; 
   align-self: flex-end;
-  padding-bottom: 25px;
+  padding-bottom: 25px;*/
   font-size: 14px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
-  background-size: cover;
-  color: black;
+/*  background-size: cover;
+*/  color: black;
 /*  border: 1px #000 solid;
 */}
 
@@ -303,6 +306,29 @@ body{
   font-style: normal;
   background-size: cover;
   color: #FFA682;
+}
+
+.shell{
+  display: flex;
+  align-items: baseline;
+  overflow: visible !important;
+}
+
+.dangerTitle{
+  font-size: 18px;
+}
+
+.dangerExpl{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 12px
+}
+
+.dangerImg{
+  display: block;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lead {
@@ -360,14 +386,18 @@ a {
 /*  color: #4A4A4A;
 */}
 
+.worktextlink a{
+  color: #000
+}
 
-a:after { 
+
+.worktextlink a:after { 
   content: ""; 
   display: inline-block; 
   position: absolute; 
   left: 0px; 
   bottom: -2px; 
-  background-color: #101010; 
+  background-color: #FFA682; 
   width: 0; 
   height: 3px; 
   transition: all 0.8s; 
@@ -378,7 +408,7 @@ a:hover {
 /*  color: #4A4A4A; 
 */} 
 
-a:hover:after,
+.worktextlink a:hover:after,
 .active a:after { 
   width: 100%;
 }
@@ -456,6 +486,14 @@ a:hover:after,
   width: 100%;
 }
 
+#bg_dangerHead{
+  background-image: url(dangerzonehead.png);
+  height: auto;
+  width: 100%;
+  background-position: center;
+
+}
+
 #myVideo{
     position: absolute;
     right: 0;
@@ -529,6 +567,15 @@ a:hover:after,
     background-position: left;
   }
 
+  #bg_dangerHead{
+/*  background-image: url(dangerzonehead.png);
+  height: auto;
+  width: 100%;
+  background-position: center;*/
+  background-size: 130vw;
+  background-repeat: no-repeat;
+}
+
   #vimeo {
     width: 100%;
   }
@@ -551,17 +598,34 @@ a:hover:after,
 /*  border: 1px #000 solid;
 */}
 
+.shell{
+  flex-wrap: wrap;
+}
+
+.dangerTitle{
+  font-size: 14px;
+}
+
+.dangerExpl{
+  flex-wrap: wrap;
+  font-size: 12px
+}
+
+.dangerImg{
+  width: 86vw;
+}
+
 .projectCopy {
-  grid-row: 2 / 3;
-  grid-column: 1 / 4;
+/*  grid-row: 2 / 3;
+  grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 12px;
 /*  border: 1px #000 solid;
 */}
 
 .projectQuote {
-  grid-row: 3 / 4;
-  grid-column: 1 / 4;
+/*  grid-row: 3 / 4;
+  grid-column: 1 / 4;*/
   align-self: flex-start;
   font-size: 14px;
 /*  border: 1px #000 solid;
@@ -570,6 +634,7 @@ a:hover:after,
 .scrollNote {
   grid-row: 4 / 5;
   font-size: 10px;
+
 /*  border: 1px #000 solid;
 */}
 
