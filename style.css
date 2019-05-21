@@ -32,8 +32,6 @@ body{
   height: 2em;
   background: #101010;
   bottom: 0;
-  padding-left: 15vw;
-
 /*  background: #CBCBCB;*/
   z-index: 9;
 }
@@ -47,7 +45,11 @@ body{
     font-family: 'IBM Plex Mono', monospace;
     color: #CBCBCB;
     padding: 0.2vw 1vw 0 0;
-} 
+}
+
+#footer:first-child{
+  padding-left: 15vw;
+}
 
 
 .section {
@@ -76,7 +78,9 @@ body{
     color: #CBCBCB;
 }
 
-.highlight1 {
+
+
+.section.active .fp-tableCell .highlight1 {
   /*background-color: #FFA682; 
   height: 100%;
   width: 100%;
@@ -92,7 +96,7 @@ body{
 
 }
 
-.highlight2 {
+.section.active .fp-tableCell .highlight2{
   /*background-color: #FFA682; 
   height: 100%;
   width: 100%;
@@ -400,7 +404,8 @@ a {
   background-color: #FFA682; 
   width: 0; 
   height: 3px; 
-  transition: all 0.8s; 
+  transition: all 0.8s;
+  transition-delay: 0.3s; 
   } 
 
 a:hover { 
@@ -540,8 +545,11 @@ a:hover {
   
   #footer{
   height: 44px;
-  padding-left: 7vw;
   }
+
+  #footer:first-child{
+  padding-left: 7vw;
+}
 
   #bg_two{
     background-size: 80vw;
