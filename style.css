@@ -187,8 +187,8 @@ body{
 }
 
 .projectHeadline {
-  grid-row: 1 / 2;
-  align-self: flex-end;
+/*  grid-row: 1 / 2;
+  align-self: flex-end;*/
   font-size: 34px;
   font-family: 'IBM Plex Mono', monospace;
   font-style: italic;
@@ -246,13 +246,43 @@ body{
 
 .dangerTitle{
   font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.dangerLabel{
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #CBCBCB;
+  font-size: 10px;
 }
 
 .dangerExpl{
   display: flex;
   flex-wrap: nowrap;
-  font-size: 12px
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  width: 100%;
 }
+
+.dangerExplLeft{
+  width: 33%;
+  padding-right: 1%;
+/*  padding-right: 3%;
+*/}
+
+.dangerExplMiddle{
+  width: 33%;
+  padding-left: 1%;
+  padding-right: 1%;
+/*  padding-right: 3%;
+*/}
+
+.dangerExplRight{
+  width: 33%;
+  padding-left: 1%;
+/*  padding-right: 3%;
+*/}
 
 .dangerImg{
   display: block;
@@ -510,7 +540,7 @@ a:hover {
 */  }
 
   .projectHeadline {
-  grid-row: 1 / 2;
+/*  grid-row: 1 / 2;*/
   align-self: flex-end;
   font-size: 18px;
 }
@@ -521,11 +551,28 @@ a:hover {
 
 .dangerTitle{
   font-size: 14px;
-}
+/*  padding-bottom: 10px;
+*/}
 
 .dangerExpl{
   flex-wrap: wrap;
   font-size: 12px
+}
+
+.dangerExplLeft{
+  width: 100%;
+  padding-right: 0%;
+}
+
+.dangerExplMiddle{
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.dangerExplRight{
+  width: 100%;
+  padding-left: 0%;
 }
 
 .dangerImg{
