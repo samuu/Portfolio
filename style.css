@@ -461,6 +461,12 @@ a:hover {
       z-index:3;
   }
 
+.desktopLink{
+  display: inline;
+}
+.mobileLink{
+  display: none;
+}
 
 
 @media (max-width: 850px){
@@ -603,6 +609,14 @@ a:hover {
   width: 100vw;
   position: relative;
   left: -7vw;
+}
+
+.desktopLink{
+  display: none;
+}
+
+.mobileLink{
+  display: inline;
 }
 
 .credits {
