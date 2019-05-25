@@ -70,7 +70,8 @@ body{
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
   background-size: 200%;
-}
+/*  padding: 0px 5px;
+*/}
 
 .section.active .fp-tableCell .highlight2{
   background-image: linear-gradient(to right, transparent 50%, #e4dfdd 50%);
@@ -78,8 +79,8 @@ body{
   animation-delay: 1.4s;
   animation-fill-mode: forwards;
   background-size: 200%;
-
-}
+/*  padding: 0px 5px;
+*/}
 
 
 .imggrid {
@@ -309,15 +310,15 @@ body{
   color: #101010;
 }
 
-/*.smalltext {
+.smalltext {
   text-align:left;
   padding-left: 15vw;
   padding-right: 15vw;
   font-size: 12px;
-  font-family: 'Space Mono', sans-serif;
-  color: #101010;
+  font-family: 'Open Sans', sans-serif;
+  color: #3e3e3e;
 }
-
+/*
 #blue.worktext {
   color: #262C7E;
 }*/
@@ -581,7 +582,7 @@ a:hover {
 
 .projectCopy {
   align-self: flex-start;
-  font-size: 12px;
+  font-size: 10px;
   width: 100%;
   padding-right: 0%;
 }
