@@ -315,7 +315,8 @@ body{
   padding-left: 15vw;
   padding-right: 15vw;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;  
   color: #3e3e3e;
 }
 /*
