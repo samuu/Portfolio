@@ -319,10 +319,7 @@ body{
   font-style: normal;  
   color: #3e3e3e;
 }
-/*
-#blue.worktext {
-  color: #262C7E;
-}*/
+
 
 a {
   position: relative; 
@@ -460,7 +457,24 @@ a:hover {
       background-size: contain;
       object-fit: cover; /*cover video background */
       z-index:3;
-  }
+}
+
+#myVideoHead{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top:-1em;
+    left:-5vw;
+    width: 80vw;
+    height: auto;
+    background-size: 100% 100%;
+    background-color: #f7f7f7; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:3;
+}
 
 .desktopLink{
   display: inline;
@@ -530,10 +544,17 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+
   #vimeo {
     width: 100vw;
     position: relative;
     left: -7vw;
+  }
+
+    #myVideoHead{
+    top:-22px;
+    left:-17vw;
+    width: 120vw;
   }
 
   a:after { 
@@ -622,8 +643,9 @@ a:hover {
 
 .credits {
   font-size: 14px;
+  }
 }
-}
+
 @media (min-width: 850px){
   #footer #imp a{
     padding-right: 15vw;
