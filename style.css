@@ -513,6 +513,12 @@ a:hover {
     padding-left: 7vw;
   }
 
+  #bg_one{
+  height: auto;
+  width: 120%;
+  background-position: right;
+}
+
 
   #bg_two{
     background-size: 80vw;
